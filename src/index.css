@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-ink-900 text-gray-100 font-sans antialiased;
+  }
+  a {
+    @apply text-link;
+  }
+}
+
+@layer components {
+  .input {
+    @apply w-full bg-ink-600 border-b border-ink-500 px-3 py-2 text-sm text-gray-100 placeholder-gray-500 outline-none focus:border-brand focus:ring-1 focus:ring-brand;
+  }
+  .page-bg {
+    background-color: #1a3a5c;
+    background-image:
+      radial-gradient(circle at 15% 20%, rgba(194, 110, 60, 0.55) 0 90px, transparent 91px),
+      radial-gradient(circle at 85% 30%, rgba(194, 110, 60, 0.5) 0 40px, transparent 41px),
+      radial-gradient(circle at 80% 85%, rgba(220, 205, 170, 0.45) 0 120px, transparent 121px),
+      radial-gradient(circle at 20% 85%, rgba(224, 168, 60, 0.5) 0 100px, transparent 101px),
+      radial-gradient(circle at 60% 10%, rgba(31, 95, 130, 0.8) 0 80px, transparent 81px);
+  }
+}
